@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Dashboard</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Manage Updates</a></li>
+            <button id="verify-acc">verify </button>
+            <button id="logout-btn" class="logout-btn" onclick="logout()">Log Out</button>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="stats">
+            <h2>Statistics Overview</h2>
+            <p>Welcome to your dashboard! Here, you can monitor key statistics and stay updated on your account's activity.</p>
+            <div class="bar-graphic">
+                <div class="bar" style="width: 70%; background-color: #9fdeaf;">New Users - 70%</div>
+                <div class="bar" style="width: 85%; background-color: #96dbe2;">User Engagement - 85%</div>
+                <div class="bar" style="width: 60%; background-color: #9fdeaf;">Revenue Growth - 60%</div>
+                <div class="bar" style="width: 90%; background-color: #96dbe2;">Positive Feedback - 90%</div>
+            </div>
+        </div>
+
+        <div class="trends">
+            <h2>Market Trends</h2>
+            <div class="trend-section">
+                <!-- Upward Trends Section -->
+                <div class="upward-trend">
+                    <h3>📈 Upward Trends</h3>
+                    <p>Your recent campaigns have shown positive growth with a 15% increase in user sign-ups this month.</p>
+                    <p>Website traffic has steadily risen with more engagement on posts.</p>
+                    <p>Positive reviews have also increased, reflecting higher customer satisfaction.</p>
+                </div>
+        
+                <!-- Downward Trends Section -->
+                <div class="downward-trend">
+                    <h3>📉 Downward Trends</h3>
+                    <p>Ad costs have increased, affecting the budget allocation for this quarter.</p>
+                    <p>User activity on the older blog section has decreased by 10% as focus shifts to new features.</p>
+                    <p>Average session time has seen a slight drop, possibly indicating content review needs.</p>
+                </div>
+            </div>
+        </div>
+                    </div>
+        </div>
+    </div>
+    <script type="module">
+        import { auth } from "./firebase.js";
+        import { signOut ,sendSignInLinkToEmail} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"; 
+
+        window.logout = function() {
+            signOut(auth).then(() => {
+                window.location.href = "index.html"; // Redirect to signup page
+            }).catch((error) => {
+                console.error("Error signing out:", error);
+                Swal.fire("Error", "Failed to log out. Please try again.", "error");
+            });
+        };
+    </script>
+        <script type="module" src="./app.js"></script>
+        <script type="module" src="./firebase.js"></script>
+    
+</body>
+</html>
