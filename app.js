@@ -191,7 +191,7 @@
 
 
 import { auth } from "./firebase.js";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendSignInLinkToEmail } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+import { createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Toggle between Sign In and Sign Up forms
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // Redirect to dashboard after sign-up
                     setTimeout(() => {
                         window.location.href = "dashboard.html"; // Redirect to dashboard
-                    }, 30000); // 30000 milliseconds = 30 seconds
+                    }, 3000); // 30000 milliseconds = 30 seconds
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -287,7 +287,24 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please enter both email and password.");
         }
     });
+    // /////////////////////////////////////////////
+    // const withgoogle = document.getElementById("show-sign-in-form");
 
+    // signInWithPopup(auth, provider)
+    //   .then((result) => {
+    //     const credential = GoogleAuthProvider.credentialFromResult(result);
+    //     const token = credential.accessToken;
+    //     const user = result.user;
+    //     console.log(user);
+    //   }).catch((error) => {
+    //     const errorCode = error.code;
+    //     const errorMessage = error.message;
+    //     console.log(errorCode, errorMessage)
+    //     const email = error.customData.email;
+    //     const credential = GoogleAuthProvider.credentialFromError(error);
+    //   });
+    
+    
     // Verify Email button click event
     const actionCodeSettings = {
         url: 'http://your-app.com/finishSignUp?cartId=1234', // Update this URL to your verification handler
@@ -314,3 +331,36 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+
+ // Load profile data from localStorage
+//  window.onload = function() {
+//     const profileData = JSON.parse(localStorage.getItem('profileData'));
+//     const profilePhoto = localStorage.getItem('profilePhoto');
+
+//     if (profileData) {
+//       document.getElementById('profile-name').textContent = profileData.firstName + ' ' + profileData.lastName;
+//       document.getElementById('display-first-name').textContent = profileData.firstName;
+//       document.getElementById('display-last-name').textContent = profileData.lastName;
+//       document.getElementById('display-dob').textContent = profileData.dob;
+//       document.getElementById('display-contact').textContent = profileData.contact;
+//       document.getElementById('display-gender').textContent = profileData.gender;
+//     }
+
+//     if (profilePhoto) {
+//       document.getElementById('profile-photo').src = profilePhoto;
+//     }
+//   };
+// when click on edit button
+const editButton = document.getElementById('edit-btn');
+if (editButton) {
+    editButton.addEventListener('click', function() {
+        setTimeout(function() {
+            window.location.href = "edit-profile.html"; // Redirect to the Edit Profile page
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+} else {
+    console.error("Edit button not found in the DOM.");
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+   
+ <div class="profile-container">
+  <img id="profile-photo" src="" alt="Profile Photo" class="profile-photo">
+  
+  <div class="profile-info">
+      <h3 id="profile-name">User Name</h3>
+      <p><strong>First Name:</strong> <span id="display-first-name"></span></p>
+      <p><strong>Last Name:</strong> <span id="display-last-name"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="display-dob"></span></p>
+      <p><strong>Contact Number:</strong> <span id="display-contact"></span></p>
+      <p><strong>Gender:</strong> <span id="display-gender"></span></p>
+  </div>
+
+  <button onclick="window.location.href='edit-profile.html'">Edit Profile</button>
+  <button id="save-profile-btn">Save Profile</button>
+
+<script type="module" src="profile.js"></script>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./edit-profile.js"></script>
+    <!-- <script type="module" src="./p"></script> -->
+</body>
+</html>

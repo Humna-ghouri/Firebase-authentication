@@ -23,14 +23,54 @@ body {
     font-size: 1.5rem;
     color: #fff;
 }
+#edit-btn{
+    cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 130px;
+	height: 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: none;
+	border-radius: 20px;
+	color: white;
+	background-color: #9fdeaf;
+    margin-left: 20px;
+	margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+
+}
+.buttons{
+    cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: none;
+	border-radius: 20px;
+	color: white;
+	background-color: #9fdeaf;
+    margin-left: 20px;
+	margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+}
 
 .navbar ul {
     display: flex;
     list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navbar ul li {
     margin-left: 1rem;
+    margin-top: 30px;
 }
 
 .navbar ul li a {
@@ -38,6 +78,25 @@ body {
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+}
+#posts{
+    cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: none;
+	border-radius: 20px;
+	color: white;
+	background-color: #9fdeaf;
+    margin-left: 20px;
+	margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+
 }
 
 .navbar ul li a:hover {

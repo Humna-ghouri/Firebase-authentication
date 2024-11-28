@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Edit Profile</title>
+    <link rel="stylesheet" href="./edit-profile.css">
+</head>
+<body>
+    
+    <!-- <div class="container">
+        <div class="sidebar">
+          <div class="profile-section">
+            <img id="profile-photo" src="https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Photo">
+            <input type="url" id="photo-url" placeholder="Enter image URL">
+            <button onclick="updatePhoto()" style=" margin-top: 10px;">Update Photo</button>
+          </div>
+          <nav>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+            <button>Change Password</button>
+            <button onclick="logout()">Logout</button>
+          </nav>
+        </div> -->
+      
+        <!-- Right Side: Edit Profile Form -->
+        <!-- <div class="profile-form">
+          <h2>Edit Profile</h2>
+          <form>
+      
+            <label>First Name</label>
+            <input type="text" placeholder="First Name">
+      
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name">
+      
+            <label>Date of Birth</label>
+            <input type="date">
+      
+            <label>Contact Number</label>
+            <input type="number" placeholder="Contact Number">
+      
+            <label>Gender</label>
+            <select>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="custom">Custom</option>
+            </select>
+      
+            <button type="submit">Save Changes</button>
+          </form>
+        </div>
+      </div> -->
+
+
+
+
+
+
+
+      <!-- <div class="container">
+        <div class="sidebar">
+          <div class="profile-section">
+            <img id="profile-photo" src="https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Photo">
+            <input type="url" id="photo-url" placeholder="Enter image URL">
+            <button onclick="updatePhoto()" style="margin-top: 10px;">Update Photo</button>
+          </div>
+          <nav>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+            <button>Change Password</button>
+            <button onclick="logout()">Logout</button>
+          </nav>
+        </div>
+        
+        <div class="profile-form">
+          <h2>Edit Profile</h2>
+          <form onsubmit="saveProfile(event)">
+            <label>First Name</label>
+            <input type="text" id="first-name" placeholder="First Name" required>
+    
+            <label>Last Name</label>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+    
+            <label>Date of Birth</label>
+            <input type="date" id="dob" required>
+    
+            <label>Contact Number</label>
+            <input type="number" id="contact" placeholder="Contact Number" required>
+    
+            <label>Gender</label>
+            <select id="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="custom">Custom</option>
+            </select>
+    
+            <button type="submit" id="save-changes-button" >Save Changes</button>
+          </form>
+        </div>
+      </div> -->
+      <div class="navbar">
+        <h1>Dashboard</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Manage Updates</a></li>
+            <button id="edit-btn">Edit Profile </button>
+
+            <button id="verify-acc" class="buttons">verify </button>
+            <button id="logout-btn" class="buttons" class="logout-btn" onclick="logout()">Log Out</button>
+        </ul>
+    </div>
+
+
+      <div class="edit-profile-container">
+        <!-- Profile Photo URL -->
+        <input type="url" id="photo-url" placeholder="Enter Profile Image URL">
+
+        <!-- Form Fields -->
+        <input type="text" id="first-name" placeholder="First Name">
+        <input type="text" id="last-name" placeholder="Last Name">
+        <input type="date" id="dob">
+        <input type="tel" id="contact" placeholder="Contact Number">
+        
+        <!-- Gender Dropdown -->
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="custom">Custom</option>
+        </select>
+
+        <!-- Save Changes Button -->
+        <button id="save-changes-button">Save Changes</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Load JavaScript files -->
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="app.js"></script>
+        <script type="module" src="edit-profile.js"></script>
+
+    
+</body>
+</html>

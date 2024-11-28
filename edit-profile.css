@@ -1,0 +1,241 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background-color: #9fdeaf;
+    color: #fff;
+    padding: 20px;
+    height: 900px;
+  }
+  
+  .profile-section img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-section input,
+  nav button {
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .profile-form {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    margin-top: 30px;
+  }
+  
+  .profile-form h2 {
+    margin-bottom: 20px;
+    color: #9fdeaf;
+  }
+  
+  .profile-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-form input,
+  .profile-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #9fdeaf;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  button:hover {
+    background-color: #76d38d;
+  } */
+   
+
+
+
+
+
+
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #9fdeaf;
+  color: #fff;
+}
+
+.navbar h1 {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #fff;
+}
+#edit-btn{
+  cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 130px;
+height: 40px;
+font-size: 14px;
+text-transform: uppercase;
+background: none;
+border-radius: 20px;
+color: white;
+background-color: #9fdeaf;
+  margin-left: 20px;
+margin-top: 20px;
+  margin-right: 20px;
+  border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+
+}
+.buttons{
+  cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100px;
+height: 40px;
+font-size: 14px;
+text-transform: uppercase;
+background: none;
+border-radius: 20px;
+color: white;
+background-color: #9fdeaf;
+  margin-left: 20px;
+margin-top: 20px;
+  margin-right: 20px;
+  border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+  margin-top: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+
+.navbar ul li a:hover {
+  background-color: #96dbe2;
+}
+
+
+/* Main container for layout consistency */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 30%;
+    background-color: #9fdeaf;
+    color: #fff;
+    padding: 20px;
+    height: 900px;
+}
+
+/* Profile section photo styling */
+.profile-section img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Form section styling */
+.profile-form, .edit-profile-container {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+.profile-form h2, .edit-profile-container h2 {
+    margin-bottom: 20px;
+    color: #9fdeaf;
+}
+
+/* Input and select styling */
+.profile-form input, .profile-form select,
+.edit-profile-container input, .edit-profile-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Save Changes button styling */
+button, .edit-profile-container button {
+    background-color: #9fdeaf;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+button:hover, .edit-profile-container button:hover {
+    background-color: #76d38d;
+}
+

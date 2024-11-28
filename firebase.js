@@ -1,5 +1,12 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-  import { getAuth} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+  import {  getAuth,
+           
+            signInWithPopup, 
+            GoogleAuthProvider,
+            createUserWithEmailAndPassword,
+            sendSignInLinkToEmail
+          } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
   const firebaseConfig = {
     apiKey: "AIzaSyCtulJ9m1ipfy900f6KpHdMNWTw802KxrE",
     authDomain: "form-validation-bc314.firebaseapp.com",
@@ -12,4 +19,5 @@
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
-  export { auth,app };
+  const db = getFirestore(app)
+  export { auth,app,db};

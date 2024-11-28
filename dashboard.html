@@ -11,10 +11,13 @@
         <h1>Dashboard</h1>
         <ul>
             <li><a href="#">Home</a></li>
+
             <li><a href="#">Profile</a></li>
-            <li><a href="#">Manage Updates</a></li>
-            <button id="verify-acc">verify </button>
-            <button id="logout-btn" class="logout-btn" onclick="logout()">Log Out</button>
+            <button id="posts" class="posts">Posts </button>
+            <button id="edit-btn">Edit Profile </button>
+
+            <button id="verify-acc" class="buttons">verify </button>
+            <button id="logout-btn" class="buttons" class="logout-btn" onclick="logout()">Log Out</button>
         </ul>
     </div>
 
@@ -66,8 +69,18 @@
             });
         };
     </script>
+
+
+
+
+
+
+
+
+
         <script type="module" src="./app.js"></script>
         <script type="module" src="./firebase.js"></script>
+        <script type="module" src="./edit-profile.js"></script>
     
 </body>
 </html>
