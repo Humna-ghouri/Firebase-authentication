@@ -1,94 +1,3 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .sidebar {
-    width: 30%;
-    background-color: #9fdeaf;
-    color: #fff;
-    padding: 20px;
-    height: 900px;
-  }
-  
-  .profile-section img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .profile-section input,
-  nav button {
-    width: 100%;
-    margin: 30px 0;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .profile-form {
-    width: 75%;
-    padding: 20px;
-    background-color: #fff;
-    border-left: 1px solid #ddd;
-    margin-top: 30px;
-  }
-  
-  .profile-form h2 {
-    margin-bottom: 20px;
-    color: #9fdeaf;
-  }
-  
-  .profile-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .profile-form input,
-  .profile-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #9fdeaf;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: larger;
-  }
-  
-  button:hover {
-    background-color: #76d38d;
-  } */
-   
-
-
-
-
-
-
-
-
-
-
 
   * {
     box-sizing: border-box;
@@ -150,6 +59,26 @@ margin-top: 20px;
   margin-right: 20px;
   border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
 }
+#posts{
+  cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100px;
+height: 40px;
+font-size: 14px;
+text-transform: uppercase;
+background: none;
+border-radius: 20px;
+color: white;
+background-color: #9fdeaf;
+  margin-left: 20px;
+margin-top: 20px;
+  margin-right: 20px;
+  border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+
+}
+
 
 .navbar ul {
   display: flex;
@@ -236,6 +165,26 @@ button, .edit-profile-container button {
 }
 
 button:hover, .edit-profile-container button:hover {
-    background-color: #76d38d;
+    background-color: grey;
 }
 
+.user-profiles-container {
+  margin-top: 20px; /* Space above user profiles */
+}
+
+.user-profile {
+  background-color: #f9f9f9; /* Light background for profiles */
+  border: 1px solid #ddd; /* Border around each profile */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside profile */
+  margin: 10px 0; /* Space between profiles */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center align items vertically */
+}
+
+.profile-photo {
+  width: 50px; /* Fixed width for profile photo */
+  height: 50px; /* Fixed height for profile photo */
+  border-radius: 50%; /* Circular profile photo */
+  margin-right: 15px; /* Space between photo and text */
+}

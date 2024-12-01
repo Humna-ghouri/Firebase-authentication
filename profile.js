@@ -193,11 +193,3 @@ displayProfileData();
 
 // Display profile data on page load
 // displayProfileData();
-
-
-
-
-
-
-
-

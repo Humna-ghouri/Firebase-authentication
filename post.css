@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5f5; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Navbar background color */
+    padding: 20px;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Center align items vertically */
+}
+
+.navbar h1 {
+    color: 	#FFFF00; /* Heading color */
+    font-size: 2.5em; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align heading */
+    flex-grow: 1; /* Allow the heading to take up available space */
+    margin-left: 40px;
+}
+
+.navbar button {
+    background-color:	#FFFF00; /* Button background color */
+    color: black; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+    font-size: large;
+}
+
+.navbar button:hover {
+    background-color: 	grey; /* Change color on hover */
+}
+
+.content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    padding: 20px;
+}
+
+.form-section {
+    background-color: black; /* Background color for form section */
+    padding: 50px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px 	#FFFF00; /* Subtle shadow */
+    width: 300px; /* Fixed width for the form section */
+    margin-bottom: 20px; /* Space below form section */
+}
+
+.form-section h2 {
+    text-align: center; /* Center align section headings */
+    color: #333; /* Heading color */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin-bottom: 15px; /* Space below input */
+    border: 2px solid 	#FFFF00; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.4em; /* Font size */
+    transition: border-color 0.3s; /* Transition effect for border */
+    background-color: rgb(228, 226, 226);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: 	#FFFF00; /* Change border color on focus */
+}
+
+button[type="submit"] {
+    width: 100%; /* Full width for button */
+    padding: 15px; /* Padding inside button */
+    background-color:	#FFFF00; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: 	black; /* Text color */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button[type="submit"]:hover {
+    background-color: grey; /* Change color on hover */
+}
+
+#postsList {
+    margin-top: 20px; /* Space above posts list */
+    text-align: center; /* Center align posts */
+    width: 300px; /* Match width of form section */
+}
+
+#postsList {
+    margin-top: 20px; /* Space above posts list */
+    text-align: center; /* Center align posts */
+    width: 300px; /* Match width of form section */
+}
+
+
+.post {
+    background-color: #fff; /* Background color for posts */
+    border: 2px solid #96dbe2; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside post */
+    margin: 10px 0; /* Space between posts */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.post:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}

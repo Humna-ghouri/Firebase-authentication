@@ -1,11 +1,11 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
   import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
   import {  getAuth,
-           
-            signInWithPopup, 
-            GoogleAuthProvider,
-            createUserWithEmailAndPassword,
-            sendSignInLinkToEmail
+    // where,limit,query,orderBy,serverTimestamp,onSnapshot ,getDoc , getDocs ,updateDoc,arrayUnion, arrayRemove  ,setDoc ,doc,collection, addDoc,
+    //         signInWithPopup, 
+    //         GoogleAuthProvider,
+    //         createUserWithEmailAndPassword,
+    //         sendSignInLinkToEmail
           } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
   const firebaseConfig = {
     apiKey: "AIzaSyCtulJ9m1ipfy900f6KpHdMNWTw802KxrE",
@@ -21,3 +21,4 @@
   const auth = getAuth(app);
   const db = getFirestore(app)
   export { auth,app,db};
+  console.log("Firestore DB initialized:", db); 

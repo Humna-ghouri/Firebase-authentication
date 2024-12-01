@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color: #9fdeaf;
+    background-color: black;
     color: #fff;
 }
 
@@ -35,11 +35,11 @@ body {
 	background: none;
 	border-radius: 20px;
 	color: white;
-	background-color: #9fdeaf;
+	background-color: black;
     margin-left: 20px;
 	margin-top: 20px;
     margin-right: 20px;
-    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+    border: 2px solid 	#FFFF00; /* A darker shade than #9fdeaf */
 
 }
 .buttons{
@@ -54,11 +54,11 @@ body {
 	background: none;
 	border-radius: 20px;
 	color: white;
-	background-color: #9fdeaf;
+	background-color: black;
     margin-left: 20px;
 	margin-top: 20px;
     margin-right: 20px;
-    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+    border: 2px solid 	#FFFF00; /* A darker shade than #9fdeaf */
 }
 
 .navbar ul {
@@ -91,16 +91,18 @@ body {
 	background: none;
 	border-radius: 20px;
 	color: white;
-	background-color: #9fdeaf;
+	background-color: black;
     margin-left: 20px;
 	margin-top: 20px;
     margin-right: 20px;
-    border: 2px solid #7fbf8c; /* A darker shade than #9fdeaf */
+    border: 2px solid 	#FFFF00; /* A darker shade than #9fdeaf */
 
 }
-
+button :hover{
+background-color: grey;
+}
 .navbar ul li a:hover {
-    background-color: #96dbe2;
+    background-color: 	grey;
 }
 
 .content {
@@ -179,9 +181,9 @@ body {
 
 /* Colors to match the #9fdeaf and #96dbe2 theme */
 .upward-trend {
-    border-left: 5px solid #9fdeaf;
+    border-left: 5px solid black;
 }
 
 .downward-trend {
-    border-left: 5px solid #96dbe2;
+    border-left: 5px solid black;
 }
