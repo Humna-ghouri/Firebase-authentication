@@ -13,31 +13,52 @@ fileInput.addEventListener("change", () => {
     body: fd,
   })
     .then((response) => response.json())
+    // .then((data) => {
+    //   let resourceURl = data.secure_url;
+    //   console.log("uploaded succesfully", resourceURl);
+    //     let img = new Image()
+    //     img.src = resourceURl
+    //     gallery.appendChild(img)
+    //     const pdfEmbed = document.createElement("embed")
+    //     pdfEmbed.src = resourceURl
+    //     pdfEmbed.type = "application/pdf"
+    //     gallery.appendChild(pdfEmbed)
+    // })
     .then((data) => {
       let resourceURl = data.secure_url;
-      console.log("uploaded succesfully", resourceURl);
-      //   let img = new Image()
-      //   img.src = resourceURl
-      //   gallery.appendChild(img)
-      //   const pdfEmbed = document.createElement("embed")
-      //   pdfEmbed.src = resourceURl
-      //   pdfEmbed.type = "application/pdf"
-      //   gallery.appendChild(pdfEmbed)
-    })
+      console.log("Uploaded successfully:", resourceURl);
+  
+      let img = new Image();
+      img.src = resourceURl;
+      img.alt = "Uploaded Image";
+      img.className = "uploaded-img"; // Dynamically assign the CSS class
+      gallery.appendChild(img);
+  })
     .catch((e) => {
       console.log(e);
     });
 });
-let dropArea = document.getElementById("dropArea");
-dropArea.addEventListener("dragover", () => {
-  console.log("dragging over");
-});
-// dropArea.addEventListener("dragleave",()=>{
-//     console.log("leaving");
-// })
 dropArea.addEventListener("drop", (event) => {
   event.stopPropagation();
   event.preventDefault();
-  console.log("dropped");
-  console.log(event.dataTransfer.files);
+  let file = event.dataTransfer.files[0]; // Get the first dropped file
+  let fd = new FormData();
+  fd.append("upload_preset", unsignedUploadPreset);
+  fd.append("file", file);
+
+  fetch(url, {
+      method: "POST",
+      body: fd,
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      let resourceURl = data.secure_url;
+      console.log("Uploaded successfully:", resourceURl);
+      let img = new Image();
+      img.src = resourceURl;
+      gallery.appendChild(img);
+  })
+  .catch((e) => {
+      console.error(e);
+  });
 });

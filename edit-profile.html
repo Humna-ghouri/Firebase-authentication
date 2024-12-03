@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Edit Profile</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <link rel="stylesheet" href="./edit-profile.css">
 </head>
 <body>
-    
+     -->
     <!-- <div class="container">
         <div class="sidebar">
           <div class="profile-section">
@@ -98,7 +98,7 @@
           </form>
         </div>
       </div> -->
-      <div class="navbar">
+      <!-- <div class="navbar">
         <h1>Dashboard</h1>
         <ul>
             <li><a href="#">Home</a></li>
@@ -110,57 +110,89 @@
             <button id="verify-acc" class="buttons">verify </button>
             <button id="logout-btn" class="buttons" class="logout-btn" onclick="logout()">Log Out</button>
         </ul>
-    </div>
+    </div> -->
 
     
 
-      <div class="edit-profile-container">
-        <!-- Profile Photo URL -->
+/        <!-- Profile Photo URL -->
         <!-- <input type="url" id="photo-url" placeholder="Enter Profile Image URL"> -->
-        <input   type="file" id="fileInput">
-        <div id="dropArea">
-            <p>drag your files</p>
-        </div>
-        <div id="gallery"></div>
+/        <!-- <div id="gallery"></div>
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="mainImg">
+        <input type="file" class="file hidden" id="file" accept="image/*" onchange="file(event)">
+        <label for="file" class="bi bi-pencil-fill text-[0.8em] text-[#fff] bg-[#313131] w-[2em] h-[2em] flex justify-center items-center rounded rounded-[10px] absolute mt-[10em] ml-[10em] z-[20]"></label>
+        <b>
+            <h1 class="text-center width-[100%] text-[1em] flex gap-[0.7em] justify-left items-center"><span
+                    id="name"></span><i 
+                    onclick="editName(event)"
+                    class="bi bi-pencil-fill text-[#0079ff] text-[0.8em]"></i></h1>
+        </b> -->
         
 
         <!-- Form Fields -->
-        <input type="text" id="first-name" placeholder="First Name">
+        <!-- <input type="text" id="first-name" placeholder="First Name">
         <input type="text" id="last-name" placeholder="Last Name">
         <input type="date" id="dob">
-        <input type="tel" id="contact" placeholder="Contact Number">
+        <input type="tel" id="contact" placeholder="Contact Number"> -->
         
         <!-- Gender Dropdown -->
-        <select id="gender">
+        <!-- <select id="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="custom">Custom</option>
-        </select>
+        </select> -->
 
         <!-- Save Changes Button -->
-        <button id="save-changes-button" >Save Changes</button>
+/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label>
+        <p>Name</p>
+        <input  id="name"  type="text" />
+      </label>
+      <label>
+        <p>Phone Number</p>
+        <input id="phone" type="number" />
+      </label>
+      <label>
+        <p>Address</p>
+        <input  id="address" type="text" />
+      </label>
+      <label>
+        <p>CNIC</p>
+        <input  id="cnic" type="number" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <p>Age</p>
+        <input  id="age" type="number" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <p>Hobbies only write 3</p>
+        <input  id="hobbies" type="text" />
+      </label>
+      <br>
+      <br>
+      <button id="submitBtn" type="button">Submit</button>
+    </form>
+
+    <div id="userName">
+ 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Load JavaScript files -->
-        <script type="module" src="firebase.js"></script>
-        <script type="module" src="app.js"></script>
-        <script type="module" src="edit-profile.js"></script>
+    
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="edit-profile.js"></script>
 
     
-</body>
+  </body>
 </html>

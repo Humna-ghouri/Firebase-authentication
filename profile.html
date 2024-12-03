@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
             <p><strong>Gender:</strong> <span id="display-gender"></span></p>
         </div>
         <button onclick="window.location.href='edit-profile.html'">Edit Profile</button>
-    </div>
+    </div> -->
    
  <!-- <div class="profile-container">
   <img id="profile-photo" src="" alt="Profile Photo" class="profile-photo">
@@ -35,9 +35,74 @@
   <button onclick="window.location.href='edit-profile.html'">Edit Profile</button>
   <button id="save-profile-btn">Save Profile</button> -->
 
-<script type="module" src="profile.js"></script>
+<!-- <script type="module" src="profile.js"></script>
     <script type="module" src="./firebase.js"></script>
     <script type="module" src="./edit-profile.js"></script>
-    <!-- <script type="module" src="./p"></script> -->
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./img.css">
+  </head>
+  <body>
+    <form action="">
+      <input type="file" id="fileInput">
+
+
+
+      <div id="dropArea">
+          <p>drag your files</p>
+      </div>
+      
+      
+      <div id="gallery"></div>
+
+      <label>
+        <p>Name</p>
+        <input  id="name"  type="text" />
+      </label>
+      <label>
+        <p>Phone Number</p>
+        <input id="phone" type="number" />
+      </label>
+      <label>
+        <p>Address</p>
+        <input  id="address" type="text" />
+      </label>
+      <label>
+        <p>CNIC</p>
+        <input  id="cnic" type="number" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <p>Age</p>
+        <input  id="age" type="number" />
+      </label>
+      <br>
+      <br>
+      <label>
+        <p>Hobbies only write 3</p>
+        <input  id="hobbies" type="text" />
+      </label>
+      <br>
+      <br>
+      <button id="submitBtn" type="button">Submit</button>
+    </form>
+
+    <h2>Update Save</h2>
+    <div id="userData"></div>
+ 
+    </div>
+    <script src="./cloudinary.js"></script>
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="firebase.js"></script>
+   
+
+    
+  </body>
 </html>
